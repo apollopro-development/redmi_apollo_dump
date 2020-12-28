@@ -1,0 +1,11 @@
+{
+  "knockConfigs": [{
+    "displayVersion": "7",
+    "deviceProperty": 1,
+    "localAlgorithmPath": "/vendor/etc/knock_7.dlc",
+    "knockRegion": "3,3,3,3",
+    "deviceX":"18,36",
+    "knockScoreThreshold": 0.65
+  }
+  ]
+}
