@@ -1,0 +1,13 @@
+# qssi-user 11 RKQ1.200826.002 20.12.25 release-keys
+- manufacturer: xiaomi
+- platform: kona
+- codename: apollo
+- flavor: qssi-user
+- release: 11
+- id: RKQ1.200826.002
+- incremental: 20.12.25
+- tags: release-keys
+- fingerprint: Redmi/apollo/apollo:11/RKQ1.200826.002/20.12.25:user/release-keys
+- brand: Redmi
+- branch: qssi-user-11-RKQ1.200826.002-20.12.25-release-keys
+- repo: redmi_apollo_dump
