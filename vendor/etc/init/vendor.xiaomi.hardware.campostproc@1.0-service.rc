@@ -1,0 +1,9 @@
+# Copyright (c) 2020 Xiaomi, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Xiaomi, Inc.
+#
+service campostproc-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.campostproc@1.0-service
+    class hal
+    user cameraserver
+    group audio camera input drmrpc
+    onrestart restart camerapostproc
