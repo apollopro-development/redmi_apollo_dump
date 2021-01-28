@@ -1,0 +1,19 @@
+service storaged /system/bin/storaged
+    class main
+    capabilities DAC_READ_SEARCH
+    priority 10
+    file /d/mmc0/mmc0:0001/ext_csd r
+    writepid /dev/cpuset/system-background/tasks
+    user root
+    group package_info
+
+on post-fs-data
+    mkdir /data/app-tmp 0777 system sdcard_rw
+    mount tmpfs tmpfs /data/app-tmp
+    chown system sdcard_rw /data/app-tmp
+    chmod 0770 /data/app-tmp
+    mkdir /data/data-tmp 0777 system sdcard_rw
+    mount tmpfs tmpfs /data/data-tmp
+    chown system sdcard_rw /data/data-tmp
+    chmod 0770 /data/data-tmp
+    restorecon_recursive /data/data-tmp
